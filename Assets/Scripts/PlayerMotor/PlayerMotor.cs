@@ -107,6 +107,31 @@ public class PlayerMotor : MonoBehaviour
 
     public void ResumePlayer()
     {
+        
         isPaused = false;
+    }
+
+    public void RespawnPlayer()
+    {
+        ChangeState(GetComponent<RespawnState>());
+        GameManager.Instance.ChangeCamera(GameCamera.Respawn);
+    }
+
+    public void ResetPlayer()
+    {
+        currentLane = 0;
+        transform.position = new Vector3(0.45f, 0.19f, 1.52f);
+        anim?.SetTrigger("Idle");
+        PausePlayer();
+        ChangeState(GetComponent<RunningState>());
+
+    }
+
+    public void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        string hitLayerName = LayerMask.LayerToName(hit.gameObject.layer); 
+        
+        if (hitLayerName == "Death")
+            ChangeState(GetComponent<DeathState>());
     }
 }
