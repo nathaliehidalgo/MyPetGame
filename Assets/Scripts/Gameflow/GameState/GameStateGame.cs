@@ -6,6 +6,7 @@ using TMPro;
 public class GameStateGame : GameState
 {
     public GameObject gameUI;
+    public AudioSource boneCollectSound;
     [SerializeField] private TextMeshProUGUI boneCount;
     [SerializeField] private TextMeshProUGUI scoreCount;
 
@@ -24,6 +25,9 @@ public class GameStateGame : GameState
     private void OnCollectBone(int amnCollected)
     {
         boneCount.text = GameStats.Instance.BoneToText();
+        if(amnCollected > 0){
+            boneCollectSound.Play();
+        }
     }
 
     private void OnScoreChange(float score)

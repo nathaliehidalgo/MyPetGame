@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a13459c97f99448a3b642e9e2da3a1, type: 3}
+  m_Name: 12_PirateHat
+  m_EditorClassIdentifier: 
+  ItemName: Pirate
+  ItemPrice: 25
+  Thumbnail: {fileID: 21300000, guid: 2be8d65875614a849a003a05a0844913, type: 3}
+  Model: {fileID: 555071396435367647, guid: 1b268cde1b0bef743bc3db1e0075bcb0, type: 3}

@@ -7,6 +7,7 @@ using System;
 public class GameStateInit : GameState
 {
     public GameObject menuUI;
+    public AudioSource menuSound;
     [SerializeField] private TextMeshProUGUI hiscoreText;
     [SerializeField] private TextMeshProUGUI bonecountText;
     [SerializeField] private AudioClip menuLoopMusic;
@@ -32,12 +33,13 @@ public class GameStateInit : GameState
     {
         brain.ChangeState(GetComponent<GameStateGame>());
         GameStats.Instance.ResetSession();
+        menuSound.Play();
     }
 
     public void OnShopClick()
     {
-      //  brain.ChangeState(GetComponent<GameStateShop>());
-      Debug.Log("Shop button has been clicked!");
+      brain.ChangeState(GetComponent<GameStateShop>());
+      menuSound.Play();
     }
 
 }

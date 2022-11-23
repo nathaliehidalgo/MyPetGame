@@ -5,11 +5,13 @@ using UnityEngine;
 public class JumpingState : BaseState
 {
     public float jumpForce = 7.0f;
+    public AudioSource jumpSound;
 
     public override void Construct()
     {
         motor.verticalVelocity = jumpForce;
         motor.anim?.SetTrigger("Jump");
+        jumpSound.Play();
     }
 
     public override Vector3 ProcessMotion()
@@ -31,6 +33,17 @@ public class JumpingState : BaseState
 
     public override void Transition()
     {
+
+        if (InputManager.Instance.SwipeLeft){    
+        motor.ChangeLane(-1);
+        jumpSound.Play();
+        }
+    
+        if (InputManager.Instance.SwipeRight){
+            motor.ChangeLane(1);
+            jumpSound.Play();
+        }
+
         if (motor.verticalVelocity < 0)
         motor.ChangeState(GetComponent<FallingState>());
     }

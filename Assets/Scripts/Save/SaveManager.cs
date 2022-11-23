@@ -24,6 +24,7 @@ public class SaveManager : MonoBehaviour
         instance = this;
         formatter = new BinaryFormatter();
         //Try and load the previous save state
+        Debug.Log("Save dir: " + Application.persistentDataPath);
         Load();
     }
 

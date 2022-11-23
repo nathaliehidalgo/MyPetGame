@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a13459c97f99448a3b642e9e2da3a1, type: 3}
+  m_Name: 03_BowlerHat
+  m_EditorClassIdentifier: 
+  ItemName: Bowler
+  ItemPrice: 10
+  Thumbnail: {fileID: 21300000, guid: bddece14037dd87448cf01c4327eda3f, type: 3}
+  Model: {fileID: 4483284741902831288, guid: efe1ccd3f632f264a8cacc53e371d866, type: 3}

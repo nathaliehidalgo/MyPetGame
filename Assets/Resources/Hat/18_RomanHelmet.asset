@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a13459c97f99448a3b642e9e2da3a1, type: 3}
+  m_Name: 18_RomanHelmet
+  m_EditorClassIdentifier: 
+  ItemName: Roman
+  ItemPrice: 35
+  Thumbnail: {fileID: 21300000, guid: d09b4f16a0b361e4f824e08ab4247c1e, type: 3}
+  Model: {fileID: 9104604729510840432, guid: b6c01941591fd504d9ca1e41e6af9a7f, type: 3}

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a13459c97f99448a3b642e9e2da3a1, type: 3}
+  m_Name: 05_FiremanHelmet
+  m_EditorClassIdentifier: 
+  ItemName: Fireman
+  ItemPrice: 15
+  Thumbnail: {fileID: 21300000, guid: cbb3ec8a908b945498ccf876997cab02, type: 3}
+  Model: {fileID: 7910194554693863040, guid: 6669d487169ed484b815edeab3a72270, type: 3}

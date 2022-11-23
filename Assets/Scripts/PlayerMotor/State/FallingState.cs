@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FallingState : BaseState
 {
+    public AudioSource jumpSound;
+
     public override void Construct()
     {
         motor.anim?.SetTrigger("Fall");
@@ -29,6 +31,16 @@ public class FallingState : BaseState
 
     public override void Transition()
     {
+        if (InputManager.Instance.SwipeLeft){
+        motor.ChangeLane(-1);
+        jumpSound.Play();
+        }
+        
+        if (InputManager.Instance.SwipeRight){
+            motor.ChangeLane(1);
+            jumpSound.Play();
+        }
+
         if (motor.isGrounded)
         motor.ChangeState(GetComponent<RunningState>());
     }

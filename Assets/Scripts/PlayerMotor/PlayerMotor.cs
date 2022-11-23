@@ -15,6 +15,7 @@ public class PlayerMotor : MonoBehaviour
     public float gravity = 14.0f;
     public float terminalVelocity = 20.0f;
 
+
     public CharacterController controller;
     public Animator anim;
 

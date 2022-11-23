@@ -38,7 +38,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_90BA3E23:
-        m_Texture: {fileID: 2800000, guid: e92458be403780b4c815942ac80e41c6, type: 3}
+        m_Texture: {fileID: 2800000, guid: d261b31106421ec429c4b730d13665ca, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_B032CDBF:
@@ -81,7 +81,7 @@ Material:
     - Vector1_214F18BD: 0.005
     - Vector1_253A888: 15
     - Vector1_41D36212: 20
-    - Vector1_5101A0D2: 5
+    - Vector1_5101A0D2: 100
     - Vector1_995B999E: 0.005
     - Vector1_B3058D6: 0
     - Vector1_C0FD90F3: 2.46
@@ -107,11 +107,14 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - tiling: 100
     m_Colors:
     - Vector2_50758EE5: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_D4142330: {r: 0, g: -105.21092, b: 0, a: 0}
     - Vector2_F5E3D7D7: {r: 0, g: -90.02279, b: 0, a: 0}
     - _BaseColor: {r: 0, g: 0.3301887, b: 0.13705136, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - grassOffset: {r: 0, g: -1.52, b: 0, a: 0}
     - snowOffset: {r: 0, g: -0, b: 0, a: 0}
